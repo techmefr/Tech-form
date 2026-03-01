@@ -36,7 +36,7 @@ function handleBlur(): void {
         v-if="resolvedComponent && fieldDef"
         :model-value="value"
         :label="fieldDef.label"
-        :placeholder="fieldDef.placeholder ?? undefined"
+        :placeholder="fieldDef.placeholder"
         :error-messages="error ? [error] : []"
         :type="fieldDef.type !== 'select' && fieldDef.type !== 'textarea' ? fieldDef.type : undefined"
         :items="fieldDef.options ?? []"
