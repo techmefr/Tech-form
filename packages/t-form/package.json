@@ -1,0 +1,39 @@
+{
+    "name": "@tech-sdk/t-form",
+    "version": "0.1.0",
+    "type": "module",
+    "exports": {
+        ".": {
+            "import": "./src/index.ts",
+            "types": "./src/index.ts"
+        },
+        "./vue": {
+            "import": "./src/framework/vue/index.ts",
+            "types": "./src/framework/vue/index.ts"
+        },
+        "./react": {
+            "import": "./src/framework/react/index.ts",
+            "types": "./src/framework/react/index.ts"
+        }
+    },
+    "scripts": {
+        "typecheck": "tsc --noEmit"
+    },
+    "peerDependencies": {
+        "react": ">=18.0.0",
+        "vue": ">=3.4.0"
+    },
+    "peerDependenciesMeta": {
+        "react": {
+            "optional": true
+        },
+        "vue": {
+            "optional": true
+        }
+    },
+    "devDependencies": {
+        "@types/react": "^18.3.0",
+        "typescript": "^5.8.0",
+        "vue": "^3.4.0"
+    }
+}
