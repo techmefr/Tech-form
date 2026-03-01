@@ -17,6 +17,8 @@
         }
     },
     "scripts": {
+        "test": "vitest run",
+        "test:watch": "vitest",
         "typecheck": "tsc --noEmit"
     },
     "peerDependencies": {
@@ -33,7 +35,11 @@
     },
     "devDependencies": {
         "@types/react": "^18.3.0",
+        "@vitejs/plugin-vue": "^5.2.0",
+        "@vue/test-utils": "^2.4.0",
+        "happy-dom": "^15.0.0",
         "typescript": "^5.8.0",
+        "vitest": "^2.1.0",
         "vue": "^3.4.0"
     }
 }
